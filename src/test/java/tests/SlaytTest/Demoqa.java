@@ -1,5 +1,6 @@
 package tests.SlaytTest;
 
+import pages.DemoqaPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -10,6 +11,7 @@ public class Demoqa {
         // 1. “https://demoqa.com/webtables” sayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("demo"));
         //2. Headers da bulunan basliklari yazdirin
+        DemoqaPage demoqaPage = new DemoqaPage();
         //3. 3.sutunun basligini yazdirin
         //4. Tablodaki tum datalari yazdirin
         //5. Tabloda kac tane bos olmayan cell (data) oldugunu yazdirin
