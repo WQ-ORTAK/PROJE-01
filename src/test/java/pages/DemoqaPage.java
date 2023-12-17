@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,6 +31,13 @@ public class DemoqaPage {
 
     @FindBy(xpath = "//*[@role='rowgroup'][3] // *[@role='gridcell'][5]")
     public WebElement kierraMaasElementi;
+
+    public String istenilenHucreBilgisiDondur(int satirNo,int sutunNo){
+
+        String dinamkXpath = "//*[@role='rowgroup']["+satirNo+ "] // *[@role='gridcell'][" +sutunNo +"]";
+
+     return  Driver.getDriver().findElement(By.xpath(dinamkXpath)).getText();
+    }
 
 }
 
