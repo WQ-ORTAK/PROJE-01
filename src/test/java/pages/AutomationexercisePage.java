@@ -6,8 +6,14 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 
+<<<<<<< HEAD:src/test/java/pages/AutomationexercisePage.java
 public class AutomationexercisePage {
     public AutomationexercisePage(){
+=======
+
+public class AutomationexercisePage {
+    public automationexercisePage(){
+>>>>>>> ee4e78cd1e8185e7e29012e4e916b8b0ab515886:src/test/java/pages/automationexercisePage.java
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
