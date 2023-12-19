@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AutomationexercisePage {
 
     public AutomationexercisePage() {
@@ -90,7 +92,7 @@ public class AutomationexercisePage {
     @FindBy(xpath = "//*[@data-qa='create-account']")
     public WebElement account;
 
-    @FindBy(xpath = "(//a[@href='/'])[3]")
+    @FindBy(xpath = "//*[text()='Continue Shopping']")
     public WebElement continueButton;
 
     @FindBy(xpath = "//*[@class='col-sm-8']")
@@ -142,6 +144,48 @@ public class AutomationexercisePage {
 
     @FindBy(xpath = "//*[@id=\"product-1\"]/td[1]/a/img")
     public WebElement silinenUrun;
+
+    @FindBy(xpath = "//a[@href='/products']")
+    public WebElement productsLinki;
+
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement allProductsSayfasi;
+
+    @FindBy(id = "search_product")
+    public WebElement urunAramaKutusu;
+
+    @FindBy(id = "submit_search")
+    public WebElement urunAraButonu;
+
+    @FindBy(xpath = "//*[text()='Searched Products']")
+    public WebElement arananUrunlerSayfasi;
+
+    @FindBy(xpath = "//div[@class='single-products']")
+    public List<WebElement> tumUrunlerSayfasi;
+
+    @FindBy(xpath = "(//a[text()='Add to cart'])[1]")
+    public WebElement addToCard;
+
+    @FindBy(xpath = "//a[@href='/view_cart']")
+    public WebElement cardLinki;
+
+    @FindBy(xpath = "//*[@data-qa='login-email']")
+    public WebElement loginEmail;
+
+    @FindBy(xpath = "//*[@data-qa='login-password']")
+    public WebElement loginPassword;
+
+    @FindBy(xpath = "//*[@*='login-button']")
+    public WebElement loginButton;
+
+    @FindBy(id = "cart_info")
+    public WebElement urunSepetininGoruntulenmesi;
+
+
+
+
+
+
 
 
 }
