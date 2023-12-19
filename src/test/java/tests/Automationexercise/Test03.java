@@ -2,12 +2,10 @@ package tests.Automationexercise;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.automationexercisePage;
+import pages.AutomationexercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
-import java.util.List;
 
 public class Test03 {
     @Test
@@ -18,7 +16,7 @@ public class Test03 {
         Driver.getDriver().get(ConfigReader.getProperty("autUrl"));
 
         //3. Verify that home page is visible successfully
-        automationexercisePage page = new automationexercisePage();
+        AutomationexercisePage page = new AutomationexercisePage();
 
         String expedtedUrl = "https://www.automationexercise.com/";
         String actuelUrl = Driver.getDriver().getCurrentUrl();

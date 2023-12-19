@@ -5,11 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
 
-
-public class automationexercisePage {
-    public automationexercisePage(){
+public class AutomationexercisePage {
+    public AutomationexercisePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
