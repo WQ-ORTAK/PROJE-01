@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class Test03 {
+public class TestCase03 {
     @Test
     public void test01() {
 
@@ -18,9 +18,10 @@ public class Test03 {
         //3. Verify that home page is visible successfully
         AutomationexercisePage page = new AutomationexercisePage();
 
+
         String expedtedUrl = "https://www.automationexercise.com/";
         String actuelUrl = Driver.getDriver().getCurrentUrl();
-        Assert.assertEquals(actuelUrl,expedtedUrl);
+        Assert.assertEquals(actuelUrl, expedtedUrl);
 
 
         //4. Add products to cart
@@ -40,15 +41,9 @@ public class Test03 {
         ReusableMethods.bekle(1);
 
 
-
         //8. Verify that product is removed from the cart
 
         Assert.assertFalse(page.silinenUrun.isEnabled());
-
-
-
-
-
 
 
     }

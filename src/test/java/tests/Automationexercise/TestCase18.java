@@ -1,4 +1,4 @@
 package tests.Automationexercise;
 
-public class Testcase18 {
+public class TestCase18 {
 }
