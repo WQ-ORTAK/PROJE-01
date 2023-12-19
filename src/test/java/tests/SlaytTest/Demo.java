@@ -2,14 +2,14 @@ package tests.SlaytTest;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import pages.DemoqaPage;
+import pages.DemoPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.List;
 
-public class Demoqa {
+public class Demo {
 
     @Test
     public void webtableTest() {
@@ -17,7 +17,7 @@ public class Demoqa {
         // 1. “https://demoqa.com/webtables” sayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("demoqaUrl"));
         //2. Headers da bulunan basliklari yazdirin
-        DemoqaPage demoqaPage = new DemoqaPage();
+        DemoPage demoqaPage = new DemoPage();
         List<WebElement> baslikElementleriList = demoqaPage.baslikElementleriListesi;
         List<String> baslikYazilariList = ReusableMethods.stringListeDonustur(baslikElementleriList);
         System.out.println("Basliklar : " + baslikYazilariList);

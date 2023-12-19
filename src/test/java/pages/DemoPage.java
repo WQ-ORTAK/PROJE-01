@@ -8,8 +8,8 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class DemoqaPage {
-    public DemoqaPage(){
+public class DemoPage {
+    public DemoPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

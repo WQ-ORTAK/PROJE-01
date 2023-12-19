@@ -1,4 +1,4 @@
-package tests.automationexercise;
+package tests.Automationexercise;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
