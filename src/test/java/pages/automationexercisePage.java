@@ -8,7 +8,7 @@ import utilities.Driver;
 import java.util.List;
 
 
-public class automationexercisePage {
+public class AutomationexercisePage {
     public automationexercisePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
