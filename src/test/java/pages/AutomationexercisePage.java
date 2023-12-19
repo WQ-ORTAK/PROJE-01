@@ -1,20 +1,15 @@
 package pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-
-<<<<<<< HEAD:src/test/java/pages/AutomationexercisePage.java
 public class AutomationexercisePage {
-    public AutomationexercisePage(){
-=======
 
-public class AutomationexercisePage {
-    public automationexercisePage(){
->>>>>>> ee4e78cd1e8185e7e29012e4e916b8b0ab515886:src/test/java/pages/automationexercisePage.java
-        PageFactory.initElements(Driver.getDriver(),this);
+    public AutomationexercisePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//a[@data-product-id='1']")
@@ -129,7 +124,7 @@ public class AutomationexercisePage {
     public WebElement payButton;
 
     @FindBy(xpath = "//*[@href='/download_invoice/900']")
-    public  WebElement download;
+    public WebElement download;
 
     @FindBy(xpath = "//*[@href='/delete_account']")
     public WebElement deleteButton;
@@ -147,15 +142,6 @@ public class AutomationexercisePage {
 
     @FindBy(xpath = "//*[@id=\"product-1\"]/td[1]/a/img")
     public WebElement silinenUrun;
-
-
-
-
-
-
-
-
-
 
 
 }
