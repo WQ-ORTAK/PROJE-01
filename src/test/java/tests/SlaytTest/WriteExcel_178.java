@@ -1,8 +1,17 @@
 package tests.SlaytTest;
 
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class WriteExcel_178{
 
-    public void test01(){
+    public void test01() throws IOException {
         //1) Yeni bir Class olusturalim WriteExcel
         //2) Yeni bir test method olusturalim writeExcelTest()
         //3) Adimlari takip ederek Sayfa1’deki1.satira kadar gidelim
@@ -13,6 +22,8 @@ public class WriteExcel_178{
         //8) 15.satir nufus kolonuna 54000 yazdiralim
         //9) Dosyayi kaydedelim
         //10)Dosyayi kapatalim
-    }
+        //2) Yeni bir test method olusturalim writeExcelTest()
+        //3) Adimlari takip ederek Sayfa1’deki 1.satira kadar gidelim
 
+    }
 }
