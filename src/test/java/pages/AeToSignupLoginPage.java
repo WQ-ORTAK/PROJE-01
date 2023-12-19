@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-public class SignupLoginPage {
-    public SignupLoginPage() { PageFactory.initElements(Driver.getDriver(), this); }
+public class AeToSignupLoginPage {
+    public AeToSignupLoginPage() { PageFactory.initElements(Driver.getDriver(), this); }
 
     @FindBy(xpath = "//*[@id=\"form\"]/div/div/div[1]/div/h2") public WebElement loginToYourAccontYazisi;
     @FindBy(xpath = "//*[@id=\"form\"]/div/div/div[1]/div/form/input[2]") public WebElement loginToYourAccontdakiEmail;

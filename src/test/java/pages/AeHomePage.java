@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class HomePage {
-    public HomePage() { PageFactory.initElements(Driver.getDriver(), this); }
+public class AeHomePage {
+    public AeHomePage() { PageFactory.initElements(Driver.getDriver(), this); }
 
 @FindBy(xpath = "(//div[@class=\"carousel-inner\"])[1]") public WebElement homePageIcon;
 @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a") public WebElement signupLoginButton;
