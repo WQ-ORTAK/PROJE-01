@@ -8,8 +8,8 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class AutomationexercisePage {
-    public AutomationexercisePage() {
+public class _AutomationexercisePage {
+    public _AutomationexercisePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

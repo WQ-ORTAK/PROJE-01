@@ -2,7 +2,7 @@ package tests.Automationexercise;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AutomationexercisePage;
+import pages._AutomationexercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -16,7 +16,7 @@ public class TestCase03 {
         Driver.getDriver().get(ConfigReader.getProperty("autUrl"));
 
         //3. Verify that home page is visible successfully
-        AutomationexercisePage page = new AutomationexercisePage();
+        _AutomationexercisePage page = new _AutomationexercisePage();
 
 
         String expedtedUrl = "https://www.automationexercise.com/";
