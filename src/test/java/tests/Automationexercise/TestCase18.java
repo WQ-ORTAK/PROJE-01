@@ -17,7 +17,7 @@ public class TestCase18 extends TestBaseRapor {
         extentTest = extentReports.createTest("View Category Products Testi", "Kullanici tikladigi katogorinin gorunurlulugunu test eder.");
         //  1. Launch browser
         //  2. Navigate to url 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("oeUrl"));
+        Driver.getDriver().get(ConfigReader.getProperty("aeUrl"));
         SoftAssert softAssert = new SoftAssert();
         extentTest.info("Kullanici http://automationexercise.com sayfasinia girer");
         //  3. Verify that categories are visible on left side bar
