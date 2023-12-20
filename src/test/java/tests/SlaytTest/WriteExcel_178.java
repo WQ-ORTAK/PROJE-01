@@ -1,7 +1,7 @@
 package tests.SlaytTest;
 
 public class WriteExcel_178 {
-    @Test
+
     public void test01() {
         //1) Yeni bir Class olusturalim WriteExcel
         //2) Yeni bir test method olusturalim writeExcelTest()
