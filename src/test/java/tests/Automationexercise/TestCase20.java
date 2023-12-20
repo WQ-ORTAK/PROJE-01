@@ -2,7 +2,7 @@ package tests.Automationexercise;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.AutomationexercisePage;
+import pages._AutomationexercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -15,7 +15,7 @@ public class TestCase20 {
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("aeUrl"));
         //3. Click on 'Products' button
-        AutomationexercisePage page=new AutomationexercisePage();
+        _AutomationexercisePage page=new _AutomationexercisePage();
         page.productsLinki.click();
 
         //4. Verify user is navigated to ALL PRODUCTS page successfully

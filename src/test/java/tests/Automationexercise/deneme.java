@@ -1,12 +1,8 @@
 package tests.Automationexercise;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.AutomationexercisePage;
+import pages._AutomationexercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -17,7 +13,7 @@ public class deneme {
     public void deneme(){
 
         //1. Launch browser
-        AutomationexercisePage page=new AutomationexercisePage();
+        _AutomationexercisePage page=new _AutomationexercisePage();
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("aeUrl"));
         //3. Click on 'Products' button
