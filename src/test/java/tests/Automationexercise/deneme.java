@@ -2,7 +2,7 @@ package tests.Automationexercise;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages._AutomationexercisePage;
+import pages.AaExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -13,7 +13,7 @@ public class deneme {
     public void deneme(){
 
         //1. Launch browser
-        _AutomationexercisePage page=new _AutomationexercisePage();
+        AaExercisePage page=new AaExercisePage();
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("aeUrl"));
         //3. Click on 'Products' button
