@@ -28,6 +28,12 @@ public class AaExercisePage {
     @FindBy(xpath = "(//div[@class='container'])[2]")
     public WebElement sepetinGoruntulenmesi;
 
+    @FindBy(xpath = "(//*[@class='cart_quantity_delete'])[1]")
+    public WebElement X;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[1]/a/img")
+    public WebElement silinenUrun;
+
     @FindBy(linkText = "Proceed To Checkout")
     public WebElement proceedToCheckout;
 
@@ -134,15 +140,9 @@ public class AaExercisePage {
     public WebElement finis;
 
 
-    @FindBy(xpath = "(//*[@class='cart_quantity_delete'])[1]")
-    public WebElement X;
-
-
     @FindBy(xpath = "//*[@id='cart_info']")
     public WebElement sepetenKaldirildi;
 
-    @FindBy(xpath = "//*[@id=\"product-1\"]/td[1]/a/img")
-    public WebElement silinenUrun;
 
     @FindBy(xpath = "//a[@href='/products']")
     public WebElement productsLinki;
@@ -231,15 +231,6 @@ public class AaExercisePage {
 
     @FindBy(className = "cart_menu")
     public WebElement cartBasliklarElementi;
-
-
-
-
-
-
-
-
-
 
 
 }
